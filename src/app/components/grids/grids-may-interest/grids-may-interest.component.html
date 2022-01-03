@@ -1,0 +1,8 @@
+<div class="coluns-news" *ngFor="let news of apiAll">
+  <div class="news">
+    <div class="title">
+      {{ news.title }}
+    </div>
+  </div>
+  <div class="images"><img id="image" [src]="news['image']" alt="" /></div>
+</div>

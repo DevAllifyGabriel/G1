@@ -1,0 +1,14 @@
+<div *ngFor="let news of news" routerLink="/item-news-only/{{ news.id }}">
+  <div class="news">
+    <div class="news-image">
+      <img id="image" [src]="news.image" alt="" />
+    </div>
+    <div class="news-title">
+      <div class="descriptiom-news">
+        <h4 class="title">{{ news.title }}</h4>
+        <h6 class="subtitle">{{ news.subtitle }}</h6>
+        <h6 class="createdAt">{{ news.createdAt }}</h6>
+      </div>
+    </div>
+  </div>
+</div>

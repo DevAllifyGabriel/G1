@@ -1,0 +1,142 @@
+<app-menu-click [open]="isSidbarOpen"> </app-menu-click>
+<div
+  class="menu-overflow"
+  (click)="onSidbarOpen(false)"
+  [ngClass]="{ 'menu-overflow-active': isSidbarOpen }"
+></div>
+
+<app-root
+  [menu]="'Menu'"
+  [logo]="'g1'"
+  (emmitSearch)="getSearch($event)"
+  (onOpen)="onSidbarOpen($event)"
+></app-root>
+<div id="main">
+  <div id="main-news">
+    <div>
+      <div class="grid-news-top">
+        <div class="news-header">
+          <app-title-simple [titleSimple]="'Novas regras'"> </app-title-simple>
+          <div class="topNews">
+            <h1 class="news-title">
+              Fiscalizar quarentena de não vacinados e praticamente imposivel,
+              diz conselho de secretarios
+            </h1>
+            <h5 class="news-subtitle">
+              Projeto prorroga medida para 17 setoresque mais empregam na
+              economia. Texto vai á sanção<ng-container co></ng-container>
+            </h5>
+          </div>
+        </div>
+        <div class="news-header-double">
+          <div class="header-primary">
+            <div class="primary-text">
+              <app-title-simple id="text" [titleSimplesMain]="'Novas regras'">
+              </app-title-simple>
+            </div>
+            <div class="test"></div>
+            <div class="test2">
+              <app-title-simple
+                [titleSimpleMain]="
+                  'Carreta tomba e deixa mais de 50 imigrantes mortos em mexico'
+                "
+              ></app-title-simple>
+            </div>
+          </div>
+          <div class="header-secondary">
+            <div class="primary-text">
+              <app-title-simple id="text" [titleSimplesMain]="'Influeza'">
+              </app-title-simple>
+            </div>
+            <div class="test"></div>
+            <div class="test2">
+              <app-title-simple
+                [titleSimpleMain]="
+                  'Oque esta pro tras de epidemia de gripe no Rio'
+                "
+              ></app-title-simple>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-news-information">
+        <div class="right-news">
+          <div class="content-news">
+            <app-items-list-news [news]="news"></app-items-list-news>
+          </div>
+        </div>
+        <div class="left-news" *ngIf="apiAll.length > 0">
+          <div class="news-top">
+            <h3 class="top">Noticias que pode te interessar</h3>
+          </div>
+          <div class="interest">
+            <app-grids-may-interest [apiAll]="apiAll"></app-grids-may-interest>
+          </div>
+          <div class="most-read">
+            <app-grids-mais-lidas
+              [title]="'Mais lidas'"
+              [arrayNews]="apiAll"
+            ></app-grids-mais-lidas>
+          </div>
+          <div class="look-here">
+            <app-grids-look-here
+              [titleHere]="'Viu isso aqui?'"
+              [arrayNews]="apiAll"
+            ></app-grids-look-here>
+            <app-grids-look-here
+              id="text"
+              [titleHere]="'G1 explica'"
+              [arrayNews]="apiAll"
+            ></app-grids-look-here>
+          </div>
+          <div class="blog">
+            <app-grids-blog-g1 [arrayNews]="apiAll"></app-grids-blog-g1>
+          </div>
+          <div class="look-here">
+            <app-grids-look-here
+              id="text"
+              [arrayNews]="apiAll"
+              [titleHere]="'Ouça no G1'"
+            ></app-grids-look-here>
+          </div>
+          <div class="grids-fake">
+            <app-grids-fake
+              [title]="'Fato ou Fake'"
+              [arrayNews]="apiAll"
+            ></app-grids-fake>
+          </div>
+          <div class="look-here">
+            <app-grids-look-here
+              id="text"
+              [titleHere]="'Compras de fim de ano'"
+              [arrayNews]="apiAll"
+            ></app-grids-look-here>
+          </div>
+          <div class="how-to-make">
+            <app-how-to-make [arrayNews]="apiAll"></app-how-to-make>
+          </div>
+          <div class="look-here">
+            <app-grids-look-here
+              id="text"
+              [titleHere]="'Especial do G1'"
+              [arrayNews]="apiAll"
+            ></app-grids-look-here>
+          </div>
+          <div class="look-here">
+            <app-grids-look-here
+              id="text"
+              [titleHere]="'AoutoEsporte'"
+              [arrayNews]="apiAll"
+            ></app-grids-look-here>
+          </div>
+          <div class="grid-donate">
+            <app-donate [arrayNews]="apiAll"></app-donate>
+          </div>
+          <div class="grid-podcast">
+            <app-grids-podcast [arrayNews]="apiAll"></app-grids-podcast>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

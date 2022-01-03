@@ -1,0 +1,13 @@
+<div class="podCast-dad">
+  <div class="podCast">
+    <p class="podCast-name">Podcast</p>
+    <div class="podCast-grids" *ngFor="let pod of arrayNews">
+      <div class="podCast-grid-one">
+        <img id="one-image" [src]="pod['image']" alt="" />
+      </div>
+      <div class="podCast-grid-two">
+        <img id="tow-image" [src]="pod['image']" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

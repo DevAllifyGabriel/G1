@@ -1,0 +1,128 @@
+<app-menu-click [open]="isSidbarOpen"> </app-menu-click>
+<div
+  class="menu-overflow"
+  (click)="onSidbarOpen(false)"
+  [ngClass]="{ 'menu-overflow-active': isSidbarOpen }"
+></div>
+<app-root
+  [menu]="'Menu'"
+  [logo]="'Top news'"
+  (emmitSearch)="getSearch($event)"
+  (onOpen)="onSidbarOpen($event)"
+></app-root>
+{{ infoNews.title }}
+<div routerLink="/item-news-only/{{ infoNews.id }}">
+  <div class="info-news">
+    <div class="info-news-primary">
+      <div class="info-news-grid">
+        <div class="info-news-title">
+          <h1 id="news-title">{{ infoNews.title }}</h1>
+          <p id="news-subtitle">{{ infoNews.subtitle }}</p>
+        </div>
+        <div class="info-description">
+          <div class="description">
+            <div class="description-text">
+              <h4 id="description-name">
+                {{ infoNews.name }}, TV Globo
+                <span class="description-span">- Brasília </span>
+              </h4>
+              <h4 id="description-created">
+                {{ infoNews.createdAt }}
+                <span class="description-span">
+                  Atualizado a pouco segundos atras</span
+                >
+              </h4>
+            </div>
+          </div>
+          <div class="icon">
+            <svg
+              id="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-share-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="info-details">
+          <app-details-news [apidetails]="apidetails"></app-details-news>
+        </div>
+        <div class="info-details">
+          <app-details-news-titles
+            [apidetails]="apidetails"
+          ></app-details-news-titles>
+        </div>
+        <div class="info-details">
+          <app-details-news-subtitle
+            [detailsNewsSubtitle]="'Próximos Anos'"
+            [apidetails]="apidetails"
+          ></app-details-news-subtitle>
+          <app-details-news-subtitle
+            [detailsNewsSubtitle]="'Taxa de Juros'"
+            [apidetails]="apidetails"
+          ></app-details-news-subtitle>
+        </div>
+        <div class="newsletter">
+          <button class="newsletter-button">
+            <p class="button-title">Bank center Brasil</p>
+          </button>
+          <div class="newsletter-grid">
+            <div class="newsletter-logo">
+              <img id="image" src="../../../assets/newstellet.jpeg" alt="" />
+            </div>
+            <div class="newsletter-title">
+              <h6 class="title">Resumo do dia</h6>
+              <p class="subtitle">
+                As noticias que você não pode perde diretemente no seu e-mail.
+              </p>
+              <p class="subtitle">
+                Para se isncrever, entre ou crie uma Conta Globo gratuita.
+              </p>
+              <button id="newsletter-button">
+                <p id="newsletter-button-title">
+                  Sign up and receive the newsletter
+                </p>
+              </button>
+            </div>
+          </div>
+          <div class="newsletter-button-rodape">
+            <button class="button-rodape">
+              <p class="title-rodape">See comments</p>
+            </button>
+          </div>
+        </div>
+        <div class="info-details-special">
+          <app-details-news-subtitle
+            [detailsNewsSubtitle]="'Veja também'"
+            [apidetails]="apidetails"
+          ></app-details-news-subtitle>
+        </div>
+      </div>
+    </div>
+    <footer class="info-rodape">
+      <div class="info">
+        <div class="info-rodape-text">
+          <h3 class="rodape-text-g1">Mais do <span>G1</span></h3>
+          <h4 class="rodape-text-imunizacao">Avanço da imunização</h4>
+          <h2 class="rodape-text-vacina">
+            Vacina para as crianças téra dose menor e frasco diferente:
+          </h2>
+          <h2 class="rodape-text-vacina-h">Veja o que se sabe</h2>
+
+          <p class="rodape-text-ul">
+            Veja orientação de Anvisa para vacinação de 5 a 11 anos
+          </p>
+        </div>
+        <div class="rodape">
+          <app-items-list-news id="test"></app-items-list-news>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

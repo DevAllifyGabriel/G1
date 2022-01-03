@@ -1,0 +1,52 @@
+.blog-dad {
+  background: #fff;
+  margin-top: 35px;
+  .blog-text {
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+
+    .text {
+      margin: 15px 15px;
+      font-weight: 300;
+      color: rgb(51, 51, 51);
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .blog-grids {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    border: 1px solid #e6e6e6;
+    height: 20vh;
+    background: #fff;
+
+    .text-grid {
+      margin-top: 15px;
+      .text-paragraph {
+        margin: 5px 15px;
+        color: rgb(51, 51, 51);
+        font-size: 15px;
+      }
+      .text {
+        margin: 5px 15px;
+        font-size: 16px;
+        color: #c4170c;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-weight: 700;
+        letter-spacing: 7;
+      }
+    }
+    .image {
+      #image {
+        width: 90px;
+        height: 90px;
+        border-radius: 99px;
+        margin: 20px 5px;
+      }
+    }
+  }
+}

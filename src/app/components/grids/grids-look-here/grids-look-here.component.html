@@ -1,0 +1,11 @@
+<div id="curiosity">
+  <div class="curiosity-text">
+    <h3 class="text">{{ titleHere }}</h3>
+  </div>
+  <div class="curiosity-grids" *ngFor="let top of arrayNews">
+    <div class="title">
+      <h3 id="title">{{ top.title }}</h3>
+    </div>
+    <div class="image"><img id="image" [src]="top.image" alt="" /></div>
+  </div>
+</div>

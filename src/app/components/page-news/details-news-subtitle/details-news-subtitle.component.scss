@@ -1,0 +1,24 @@
+.details-news-subtitle {
+  margin: 40px 100px;
+  .detaisl-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    color: #333;
+  }
+  .details-title {
+    margin-bottom: 10px;
+  }
+  .details-list-item {
+    margin: 40px 20px;
+    li {
+      margin-top: 40px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      line-height: 30px;
+      color: #333;
+    }
+  }
+}

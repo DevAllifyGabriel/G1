@@ -1,0 +1,89 @@
+#pai {
+  background: red;
+}
+#main {
+  width: 100%;
+  background: #f9f9f9;
+  #main-news {
+    margin: 100px 60px;
+    height: 100%;
+
+    .grid-news-top {
+      padding-top: 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      height: 100vh;
+      .news-header {
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+        background: #fff;
+        .topNews {
+          margin: 150px 30px;
+          .news-title {
+            color: #c4170c;
+          }
+          .news-subtitle {
+            margin-top: 30px;
+            margin-right: 40px;
+            font-size: 15px;
+            font-weight: 100;
+            color: #333;
+          }
+        }
+      }
+      .news-header-double {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 5px;
+        grid-gap: 5px;
+        .header-primary {
+          border-radius: 5px;
+          background: url(../../../assets/mexicos.jpg);
+          background-size: cover;
+          background-position: center center;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .header-secondary {
+          border-radius: 5px;
+          background: url(../../../assets/doutor-true.jpg);
+          background-size: cover;
+          background-position: center center;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+    .grid-news-information {
+      margin-top: 200px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      height: 100vh;
+      .right-news {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        .content-news {
+          grid-template-columns: 1fr;
+          grid-gap: 5px;
+        }
+      }
+      .left-news {
+        margin-left: 25px;
+        .news-top {
+          height: 40px;
+          border: 1px solid #e6e6e6;
+          background: #fff;
+          .top {
+            margin: 15px 15px;
+            font-weight: 300;
+            color: rgb(51, 51, 51);
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

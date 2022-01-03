@@ -1,0 +1,29 @@
+.coluns-news {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  .news {
+    background: #ffffff;
+    height: 30vh;
+    .title {
+      font-size: 16px;
+      color: #c4170c;
+      overflow: hidden;
+      -webkit-line-clamp: 4;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      font-weight: 700;
+      letter-spacing: 7;
+      margin: 50px 15px;
+    }
+  }
+  .images {
+    background: #ffffff;
+    #image {
+      width: 100px;
+      height: 100px;
+      margin: 40px 5px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="news-details" *ngFor="let infoNews of apidetails">
+  <h1>{{ infoTitle }}</h1>
+  <h3 class="detaisl-title">{{ infoNews.text }}</h3>
+  <h3 class="detaisl-title">{{ infoNews.textSecodary }}</h3>
+  <h3 class="detaisl-title">{{ infoNews.text }}</h3>
+  <div class="image-news">
+    <img id="image" [src]="infoNews.image" alt="" />
+    <p class="detaisl-image-info">{{ infoNews.info }}</p>
+  </div>
+</div>
