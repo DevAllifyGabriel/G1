@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 .info-news {
-  margin-top: 75px;
+  margin-top: 125px;
   height: 100%;
   .info-news-primary {
     margin: 60px 200px;
@@ -77,10 +77,8 @@
         margin-top: 180px;
       }
       .newsletter {
-        margin-top: 40px;
         height: 30vh;
-        margin: 0px 120px;
-
+        margin: 20px 120px 120px 120px;
         .newsletter-button {
           background: #e7e7ea;
           outline: none;
@@ -188,6 +186,205 @@
       margin: 0px 200px;
       .rodape {
         margin: 10px 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .info-news {
+    max-width: 100%;
+    .info-news-primary {
+      margin: 60px 200px;
+      .info-news-grid {
+        display: grid;
+        width: 70%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        .info-news-title {
+          margin-top: 100px;
+          text-align: center;
+          #news-title {
+            font-size: 45px;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            font-weight: 700;
+            letter-spacing: 7;
+          }
+          #news-subtitle {
+            font-size: 25px;
+            margin-top: 20px;
+            line-height: 30px;
+            font-size: none;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+          }
+        }
+        .info-description {
+          display: grid;
+          width: 100%;
+          grid-template-columns: 1fr 1fr;
+          border-bottom: 1px solid #ccc;
+          height: 23vh;
+          .description {
+            .description-text {
+              margin-top: 50px;
+              #description-name {
+                color: #716a6a;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 16px;
+                .description-span {
+                  font-family: "Montserrat", sans-serif;
+                  font-weight: 500;
+                  font-size: 16px;
+                }
+              }
+              #description-created {
+                margin-top: 10px;
+                color: #716a6a;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                .description-span {
+                  color: #716a6a;
+                  font-family: "Montserrat", sans-serif;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          .icon {
+            #icon {
+              margin: 80px 25px;
+              float: right;
+              color: #333;
+            }
+          }
+        }
+        .info-details {
+          border-bottom: 1px solid #ccc;
+        }
+        .info-details-special {
+          margin-top: 100px;
+        }
+        .newsletter {
+          height: 30vh;
+          margin: 20px 120px 120px 120px;
+          .newsletter-button {
+            background: #e7e7ea;
+            outline: none;
+            border: none;
+            padding: 6px 25px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            border-radius: 2px;
+            font-family: "Montserrat", sans-serif;
+            .button-title {
+              text-transform: uppercase;
+              font-size: 11px;
+              font-weight: 100;
+              color: #666666;
+            }
+          }
+          .newsletter-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 90%;
+            .newsletter-logo {
+              #image {
+                background-size: cover;
+                width: 300px;
+              }
+            }
+            .newsletter-title {
+              .title {
+                font-size: 23px;
+                color: #c42c0d;
+              }
+              .subtitle {
+                font-family: "Montserrat", sans-serif;
+                color: #666666;
+                margin-top: 10px;
+                font-weight: 500;
+                font-size: 18px;
+              }
+              #newsletter-button {
+                margin-top: 30px;
+                padding: 10px 35px;
+                background: none;
+                border: 1px solid #ccc;
+                #newsletter-button-title {
+                  color: #c42c0d;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          .newsletter-button-rodape {
+            margin-top: 20px;
+            .button-rodape {
+              width: 100%;
+              background: none;
+              border: 1px solid #ccc;
+              padding: 12px;
+              .title-rodape {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                color: #666666;
+              }
+            }
+          }
+        }
+      }
+    }
+    .info-rodape {
+      background: #f3f3f3;
+      height: 200px;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      .info-rodape-text {
+        border-top: 1px solid rgba(0, 0, 0, 0.77);
+        .rodape-text-g1 {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          line-height: 30px;
+          color: #333;
+          margin-top: 15px;
+          font-size: 22px;
+        }
+        .rodape-text-imunizacao {
+          padding-top: 15px;
+          font-weight: 700;
+          font-size: 16px;
+          color: #333;
+          font-family: "Montserrat", sans-serif;
+        }
+        .rodape-text-vacina {
+          padding-top: 15px;
+          color: #c4170c;
+        }
+        .rodape-text-vacina-h {
+          padding-top: 2px;
+          color: #c4170c;
+        }
+        .rodape-text-ul {
+          padding-top: 10px;
+          color: #333;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+      .info {
+        margin: 0px 200px;
+        .rodape {
+          margin: 10px 100px;
+        }
       }
     }
   }

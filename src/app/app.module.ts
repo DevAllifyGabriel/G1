@@ -10,14 +10,7 @@ import { IconComponent } from './components/icon/icon.component';
 import { MainNewsComponent } from './main/main-news/main-news.component';
 import { TitleSimpleComponent } from './components/title-simple/title-simple.component';
 import { NewsService } from './service/news.service';
-import { GridsMaisLidasComponent } from './components/grids/grids-most-read/grids-mais-lidas.component';
 import { GridsLookHereComponent } from './components/grids/grids-look-here/grids-look-here.component';
-import { GridsMayInterestComponent } from './components/grids/grids-may-interest/grids-may-interest.component';
-import { GridsBlogG1Component } from './components/grids/grids-blog-g1/grids-blog-g1.component';
-import { GridsFakeComponent } from './components/grids/grids-fake/grids-fake.component';
-import { HowToMakeComponent } from './components/grids/how-to-make/how-to-make.component';
-import { DonateComponent } from './components/grids/donate/donate.component';
-import { GridsPodcastComponent } from './components/grids/grids-podcast/grids-podcast.component';
 import { ItemsListNewsComponent } from './components/grids/items-list-news/items-list-news.component';
 import { ItemNewsOnlyComponent } from './page-news/item-news-only/item-news-only.component';
 import { DetailsNewsComponent } from './components/page-news/details-news/details-news.component';
@@ -26,6 +19,7 @@ import { DetailsNewsSubtitleComponent } from './components/page-news/details-new
 import { MenuClickComponent } from './components/menu-click/menu-click.component';
 import { SidebarModule } from 'ng-sidebar';
 import { FormsModule } from '@angular/forms';
+import { Navbarg1Component } from './navbar/navbarg1/navbarg1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,20 +28,14 @@ import { FormsModule } from '@angular/forms';
     IconComponent,
     MainNewsComponent,
     TitleSimpleComponent,
-    GridsMaisLidasComponent,
     GridsLookHereComponent,
-    GridsMayInterestComponent,
-    GridsBlogG1Component,
-    GridsFakeComponent,
-    HowToMakeComponent,
-    DonateComponent,
-    GridsPodcastComponent,
     ItemsListNewsComponent,
     ItemNewsOnlyComponent,
     DetailsNewsComponent,
     DetailsNewsTitlesComponent,
     DetailsNewsSubtitleComponent,
     MenuClickComponent,
+    Navbarg1Component,
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DonateComponent } from './donate.component';
+import { Navbarg1Component } from './navbarg1.component';
 
-describe('DonateComponent', () => {
-  let component: DonateComponent;
-  let fixture: ComponentFixture<DonateComponent>;
+describe('Navbarg1Component', () => {
+  let component: Navbarg1Component;
+  let fixture: ComponentFixture<Navbarg1Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DonateComponent ]
+      declarations: [ Navbarg1Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DonateComponent);
+    fixture = TestBed.createComponent(Navbarg1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

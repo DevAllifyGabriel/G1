@@ -1,0 +1,332 @@
+.portal-news-header {
+  width: 100%;
+  z-index: 999;
+  background: #f9f9f9;
+  max-width: 100%;
+  .navbar-grid-double {
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 0;
+    position: fixed;
+    width: 100%;
+
+    .navbar-primary {
+      background: #f3f3f3;
+      .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .logos {
+          width: 500px;
+          margin: 12px 5px;
+          .test {
+            display: inline-flex;
+            #globo {
+              color: #0669de;
+              &:hover {
+                opacity: 0.75;
+              }
+            }
+            #g1 {
+              color: #a80000;
+            }
+            #ge {
+              color: #06aa48;
+            }
+            #gshow {
+              color: #ff6700;
+            }
+            #vídeos {
+              color: #005cef;
+            }
+            #globo-junior {
+              color: #1e4c9a;
+            }
+          }
+        }
+        .profile-description {
+          margin: 10px 5px;
+          display: grid;
+          grid-template-columns: 1fr 120px 140px;
+          .register {
+            #register {
+              float: right;
+            }
+          }
+          .email {
+            .test {
+              margin-left: 100px;
+            }
+            #email {
+              float: right;
+              margin-right: 40px;
+            }
+          }
+          .login {
+            display: grid;
+            grid-template-columns: 20px 2fr;
+            float: right;
+            #login {
+              margin-left: 7px;
+            }
+            .profile-icon {
+              background: #ef6c00;
+              text-align: center;
+              font-size: 14px;
+              border-radius: 2px;
+              .text {
+                margin-top: 2px;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    #navbar_secodary {
+      background: #c4170c;
+      height: 60px;
+      .navbar-secondary {
+        margin: 15px 15px;
+        .secondary-grids {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          .menu-click {
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            #menu-icon {
+              color: #fff;
+            }
+            .menu-text {
+              margin-top: 7px;
+              font-size: 14px;
+              text-transform: uppercase;
+              color: #fff;
+              letter-spacing: 0.75px;
+              font-weight: 500;
+            }
+          }
+          .logo-G1 {
+            text-align: center;
+            .text-center {
+              margin-top: -20px;
+              font-weight: 500;
+              font-size: 45px;
+              color: #fff;
+            }
+          }
+          .serch {
+            .serch-button {
+              float: right;
+              margin: 0px 5px;
+              #button-input {
+                height: 32px;
+                width: 150px;
+                transition: 0.5s;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                background: #a7140a;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                padding-left: 10px;
+                &:focus {
+                  width: 250px;
+                  transition: 0.75s;
+                  background: #fff;
+                  color: #000;
+                  &::placeholder {
+                    color: #000;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    padding-left: 2px;
+                  }
+                }
+                &::placeholder {
+                  color: #ffff;
+                  font-size: 14px;
+                  text-transform: uppercase;
+                  padding-left: 2px;
+                  &:visited {
+                    color: #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .portal-news-header {
+    width: 100%;
+    z-index: 999;
+    .navbar-grid-double {
+      display: grid;
+      grid-template-columns: 1fr;
+      top: 0;
+      height: 70px;
+      background: #f3f3f3;
+      .navbar-primary {
+        height: 42px;
+        background: #f3f3f3;
+        width: 70%;
+        margin: 0 auto;
+        .navbar {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .logos {
+            width: 1230px;
+            margin: 12px 5px;
+            .test {
+              display: inline-flex;
+              #globo {
+                color: #0669de;
+                &:hover {
+                  opacity: 0.75;
+                }
+              }
+              #g1 {
+                color: #a80000;
+              }
+              #ge {
+                color: #06aa48;
+              }
+              #gshow {
+                color: #ff6700;
+              }
+              #vídeos {
+                color: #005cef;
+              }
+              #globo-junior {
+                color: #1e4c9a;
+              }
+            }
+          }
+          .profile-description {
+            margin: 10px 200px;
+            display: grid;
+            grid-template-columns: 1fr 120px 140px;
+            .register {
+              #register {
+                float: right;
+              }
+            }
+            .email {
+              .test {
+                margin-left: 100px;
+              }
+              #email {
+                float: right;
+                margin-right: 40px;
+              }
+            }
+            .login {
+              display: grid;
+              grid-template-columns: 20px 2fr;
+              float: right;
+              #login {
+                margin-left: 7px;
+              }
+              .profile-icon {
+                background: #ef6c00;
+                text-align: center;
+                font-size: 14px;
+                border-radius: 2px;
+                .text {
+                  margin-top: 2px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+      #navbar_secodary {
+        width: 100%;
+        background: #c4170c;
+        .navbar-secondary {
+          background: #c4170c;
+          width: 70%;
+          margin: 0 auto;
+          .secondary-grids {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 20px 15px;
+            padding: 0;
+            .menu-click {
+              display: grid;
+              grid-template-columns: 40px 1fr;
+              #menu-icon {
+                color: #fff;
+              }
+              .menu-text {
+                margin-top: 7px;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #fff;
+                letter-spacing: 0.75px;
+                font-weight: 500;
+              }
+            }
+            .logo-G1 {
+              text-align: center;
+              .text-center {
+                margin-top: -20px;
+                font-weight: 500;
+                font-size: 45px;
+                color: #fff;
+              }
+            }
+            .serch {
+              .serch-button {
+                float: right;
+                margin: 0px 5px;
+                #button-input {
+                  height: 32px;
+                  width: 150px;
+                  transition: 0.5s;
+                  border-radius: 5px;
+                  outline: none;
+                  border: none;
+                  background: #a7140a;
+                  text-transform: uppercase;
+                  color: #fff;
+                  font-size: 14px;
+                  text-transform: uppercase;
+                  padding-left: 10px;
+                  &:focus {
+                    width: 250px;
+                    transition: 0.75s;
+                    background: #fff;
+                    color: #000;
+                    &::placeholder {
+                      color: #000;
+                      font-size: 14px;
+                      text-transform: uppercase;
+                      padding-left: 2px;
+                    }
+                  }
+                  &::placeholder {
+                    color: #ffff;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    padding-left: 2px;
+                    &:visited {
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

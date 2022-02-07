@@ -10,12 +10,19 @@ import { Utils } from 'src/app/utils';
 })
 export class GridsLookHereComponent implements OnInit {
   @Input() arrayNews?: any[] = [];
+  @Input() apiAll?: any[] = [];
+
 
   @Input() titleHere?: string;
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     Utils.shuffleArray(this.arrayNews);
+  }
+
+  onclickAlert(){
+    alert('Esse projeto e apenas uma copia do g1.globo.com, apenas como forma de aprendizado')
+
   }
 }
 

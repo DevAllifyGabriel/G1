@@ -8,7 +8,7 @@ import { NewsService } from 'src/app/service/news.service';
   styleUrls: ['./main-news.component.scss'],
 })
 export class MainNewsComponent implements OnInit {
-  public getallNews: any;
+  public getAllNews: any;
   apiAll: any[] = [];
   apidetails: any[] = [];
   filterNews: any;
@@ -27,11 +27,11 @@ export class MainNewsComponent implements OnInit {
     });
   }
 
-  getSearch(value: string) {
-    const filter = this.news.filter((res: any) => {
+  getSearch(value: string){
+    const filter = this.apiAll.filter((res: any) =>{
       return !res.title.indexOf(value.toLowerCase());
     });
-    this.news = filter;
+    this.apiAll = filter;
   }
 
   onSidbarOpen(opened: boolean) {
@@ -43,4 +43,7 @@ export class MainNewsComponent implements OnInit {
       _htmlElement?.classList.remove('scroll-hidden');
     }
   }
+
+  
+
 }

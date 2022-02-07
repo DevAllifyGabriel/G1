@@ -1,16 +1,16 @@
+<app-navbarg1
+  [menu]="'Menu'"
+  [logo]="'Top news'"
+  (emmitSearch)="getSearch($event)"
+  (onOpen)="onSidbarOpen($event)"
+></app-navbarg1>
 <app-menu-click [open]="isSidbarOpen"> </app-menu-click>
 <div
   class="menu-overflow"
   (click)="onSidbarOpen(false)"
   [ngClass]="{ 'menu-overflow-active': isSidbarOpen }"
 ></div>
-<app-root
-  [menu]="'Menu'"
-  [logo]="'Top news'"
-  (emmitSearch)="getSearch($event)"
-  (onOpen)="onSidbarOpen($event)"
-></app-root>
-{{ infoNews.title }}
+
 <div routerLink="/item-news-only/{{ infoNews.id }}">
   <div class="info-news">
     <div class="info-news-primary">
@@ -58,16 +58,7 @@
             [apidetails]="apidetails"
           ></app-details-news-titles>
         </div>
-        <div class="info-details">
-          <app-details-news-subtitle
-            [detailsNewsSubtitle]="'Próximos Anos'"
-            [apidetails]="apidetails"
-          ></app-details-news-subtitle>
-          <app-details-news-subtitle
-            [detailsNewsSubtitle]="'Taxa de Juros'"
-            [apidetails]="apidetails"
-          ></app-details-news-subtitle>
-        </div>
+
         <div class="newsletter">
           <button class="newsletter-button">
             <p class="button-title">Bank center Brasil</p>
@@ -96,12 +87,6 @@
               <p class="title-rodape">See comments</p>
             </button>
           </div>
-        </div>
-        <div class="info-details-special">
-          <app-details-news-subtitle
-            [detailsNewsSubtitle]="'Veja também'"
-            [apidetails]="apidetails"
-          ></app-details-news-subtitle>
         </div>
       </div>
     </div>

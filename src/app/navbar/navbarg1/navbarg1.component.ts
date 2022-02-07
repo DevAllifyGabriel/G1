@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-navbarg1',
+  templateUrl: './navbarg1.component.html',
+  styleUrls: ['./navbarg1.component.scss']
 })
-export class AppComponent {
+export class Navbarg1Component implements OnInit {
   title = 'g1Copy';
   @Output() emmitSearch: EventEmitter<any>  = new EventEmitter();
   @Output() onOpen: any = new EventEmitter();
@@ -23,4 +23,5 @@ export class AppComponent {
   openMenu() {
     this.onOpen.emit(true);
   }
+
 }

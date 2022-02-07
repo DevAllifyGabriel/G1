@@ -24,3 +24,33 @@
     }
   }
 }
+
+@media (min-width: 1680px) {
+  .news-details {
+    margin: 40px 100px;
+    .detaisl-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      line-height: 30px;
+      color: #333;
+      margin-top: 15px;
+      font-size: 22px;
+    }
+    .image-news {
+      text-align: center;
+      margin-top: 20px;
+      font-family: "Montserrat", sans-serif;
+      #image {
+        width: 100%;
+      }
+      .detaisl-image-info {
+        text-align: left;
+        margin-top: 10px;
+        color: #333;
+        font-weight: 200;
+        font-size: 20px;
+      }
+    }
+  }
+}
